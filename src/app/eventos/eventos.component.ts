@@ -36,4 +36,24 @@ export class EventosComponent implements OnInit {
   this.mensaje = 'Saliendo del div';
  }
 
+ onChangeInput($event){
+  console.log($event.target.value);
+ }
+
+ onInput($event){
+
+  console.log($event.target.value);
+
+  this.mensaje = $event.target.value;
+ }
+
+ onFocus(){
+   console.log("recibe foco");
+
+ }
+
+ onBlur(){
+  console.log("pierde el foco");
+ }
+
 }
